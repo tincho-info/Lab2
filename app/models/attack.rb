@@ -1,7 +1,4 @@
 class Attack < ApplicationRecord
-    validate restriccion
-    def restriccion 
-        if Monster.find_by(id: )
-            monster_
-    end
+    belongs_to :monster
+    belongs_to :victim
 end
