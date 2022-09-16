@@ -1,2 +1,0 @@
-class Attacks < ApplicationRecord
-end
