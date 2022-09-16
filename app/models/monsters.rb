@@ -1,3 +1,3 @@
 class Monsters < ApplicationRecord
-    validates :name
+    validates :name, presence: true
 end
