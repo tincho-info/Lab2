@@ -5,8 +5,8 @@ class Attack < ApplicationRecord
 
     def Mayores_18_anos
         edad=(Time.now.year - victim.birthdate.year).to_i
-        if(monster.scare_level > 5) && (edad<18)
-            errors.add(:monster.scare_level,message:"No podes master")
+        if(monster.scare_level >= 5) && (edad<18)
+            errors.add(:monster,:blank,message:"No podes master")
         end
     end
 end
