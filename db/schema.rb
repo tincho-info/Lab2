@@ -26,7 +26,9 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_23_115405) do
   create_table "monsters", force: :cascade do |t|
     t.string "name"
     t.text "description"
+    t.date "birthdate"
     t.integer "scare_level"
+    t.boolean "private"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
@@ -36,6 +38,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_09_23_115405) do
     t.integer "monster_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "descripcion"
   end
 
   create_table "victims", force: :cascade do |t|

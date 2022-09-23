@@ -4,6 +4,7 @@ class CreateTweets < ActiveRecord::Migration[7.0]
       t.string :texto
       t.integer :monster_id
       t.timestamps
+      t.string :descripcion
     end
   end
 end
